@@ -5,6 +5,7 @@ from Cipher.Vigenere import VigenereCipher
 app = Flask(__name__)
 
 caesar_cipher = CaesarCipher()
+vigenere_cipher = VigenereCipher()
 
 @app.route("/api/caesar/encrypt", methods=['POST'])
 def caesar_encrypt():
