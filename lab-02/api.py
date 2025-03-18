@@ -25,7 +25,7 @@ def caesar_decrypt():
     data = request.json
     cipher_text = data['cipher_text']
     key = int(data['key'])
-    decrypted_text = caesar_cipher.decrypt(cipher_text, key)
+    decrypted_text = caesar_cipher.decrypt_text(cipher_text, key)
     return jsonify({'decrypted_message': decrypted_text})
 
 #Vigenere Cipher
