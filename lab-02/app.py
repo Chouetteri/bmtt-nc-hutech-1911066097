@@ -103,6 +103,5 @@ def railfence_decrypt():
     decrypted_text = Railfence.rail_fence_decode(cipher_text, key)
     return f"text: {cipher_text}<br>key: {key}<br>decrypted text: {decrypted_text}"
 
-
 if __name__ == "__main__":
     app.run(host = "0.0.0.0", port = 5050, debug=True)
